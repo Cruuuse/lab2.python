@@ -100,7 +100,7 @@ class validator:
         return False
 
     def check_university(self, num) -> bool:
-        """Function: check occupation"""
+        """Function: check university"""
 
         pattern = "^.*([У|у]нивер|[А|а]кадем|[T|т]ех|[И|и]нститут|им\.|[И-и]сслед|[А-Я]{2,}).*$"
         if re.match(pattern, self.value[num]["university"]):
